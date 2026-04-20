@@ -1,0 +1,60 @@
+#include <stdlib.h>
+#include "draw.h"
+#include "defs.h"
+#include "generate.h"
+
+Display GameDisplay = {};
+                        
+
+void initDisplay(int w, int h)
+{
+    GameDisplay.window_w = w;
+    GameDisplay.window_h = h;
+    GameDisplay.buffer = malloc(sizeof(char*) * (w * h + 1));//The last char* is for null character
+}
+
+int drawToScreen()
+{
+    switch (GameMode)
+    {
+        case MD_MAIN_MENU:
+            drawMainMenu();
+            break;
+        case MD_PLAYING:
+    }
+
+}
+
+int drawMainMenu()
+{
+    int index   = 0;
+    int row     = 0;
+    int column  = 0;
+
+    const int width   = GameDisplay.window_w;
+    const int height  = GameDisplay.window_h;
+
+    for(int i = 0; i < (width * height - 1); i++)
+    {
+        
+        if (column == (width - 1))//End of the screen
+        {
+            GameDisplay.buffer[i] = '\n';
+            row++;
+            column = 0;
+        }
+        else if(row == 0 || row == (height - 1) || column == 0 || column == (width - 2))//Fill border with '*'
+        {
+            GameDisplay.buffer[i] = '*';
+            column++;
+        }
+        else//This part displays the menu text and options
+        {
+
+        }
+            
+    }
+
+    GameDisplay.buffer[width * height - 1] = '\0';
+    return 0;
+}

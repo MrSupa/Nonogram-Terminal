@@ -1,0 +1,7 @@
+# Build artifacts
+bin/
+obj/
+
+# Common C extras
+*.o
+*.exe

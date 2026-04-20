@@ -1,0 +1,64 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="-90VDUNtNk7k23y3_pj9">
+    <mxGraphModel dx="710" dy="374" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="iBUfB8kXBhmkCbZ1e_Ak-3" edge="1" parent="1" source="iBUfB8kXBhmkCbZ1e_Ak-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" target="iBUfB8kXBhmkCbZ1e_Ak-2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iBUfB8kXBhmkCbZ1e_Ak-1" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;labelBackgroundColor=none;" value="&lt;div&gt;Nonogram program start&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="100" x="375" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iBUfB8kXBhmkCbZ1e_Ak-6" edge="1" parent="1" source="iBUfB8kXBhmkCbZ1e_Ak-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" target="iBUfB8kXBhmkCbZ1e_Ak-5" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iBUfB8kXBhmkCbZ1e_Ak-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;labelBackgroundColor=none;" value="Generate a nonogram puzzle" vertex="1">
+          <mxGeometry height="60" width="120" x="365" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="iBUfB8kXBhmkCbZ1e_Ak-5" parent="1" style="whiteSpace=wrap;html=1;rounded=1;strokeWidth=2;labelBackgroundColor=none;" value="Display initial puzzle to screen" vertex="1">
+          <mxGeometry height="60" width="120" x="365" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="iBUfB8kXBhmkCbZ1e_Ak-14" edge="1" parent="1" source="iBUfB8kXBhmkCbZ1e_Ak-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" target="iBUfB8kXBhmkCbZ1e_Ak-13" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iBUfB8kXBhmkCbZ1e_Ak-11" parent="1" style="html=1;strokeWidth=2;shape=manualInput;whiteSpace=wrap;rounded=1;size=13;arcSize=11;labelBackgroundColor=none;" value="&lt;div&gt;User inputs a space in the puzzle&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="100" x="375" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="iBUfB8kXBhmkCbZ1e_Ak-12" edge="1" parent="1" source="iBUfB8kXBhmkCbZ1e_Ak-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.499;entryY=0.098;entryDx=0;entryDy=0;entryPerimeter=0;labelBackgroundColor=none;fontColor=default;" target="iBUfB8kXBhmkCbZ1e_Ak-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iBUfB8kXBhmkCbZ1e_Ak-16" edge="1" parent="1" source="iBUfB8kXBhmkCbZ1e_Ak-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" target="iBUfB8kXBhmkCbZ1e_Ak-15" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iBUfB8kXBhmkCbZ1e_Ak-13" parent="1" style="whiteSpace=wrap;html=1;strokeWidth=2;rounded=1;arcSize=11;labelBackgroundColor=none;" value="Refresh the screen with updated puzzle" vertex="1">
+          <mxGeometry height="60" width="120" x="365" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="iBUfB8kXBhmkCbZ1e_Ak-17" edge="1" parent="1" source="iBUfB8kXBhmkCbZ1e_Ak-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;labelBackgroundColor=none;fontColor=default;" target="iBUfB8kXBhmkCbZ1e_Ak-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iBUfB8kXBhmkCbZ1e_Ak-20" edge="1" parent="1" source="iBUfB8kXBhmkCbZ1e_Ak-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" target="iBUfB8kXBhmkCbZ1e_Ak-19" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iBUfB8kXBhmkCbZ1e_Ak-15" parent="1" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=2;rounded=1;arcSize=11;labelBackgroundColor=none;" value="Puzzle solved?" vertex="1">
+          <mxGeometry height="80" width="80" x="520" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="iBUfB8kXBhmkCbZ1e_Ak-18" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;labelBackgroundColor=none;" value="&lt;div&gt;No&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="520" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="iBUfB8kXBhmkCbZ1e_Ak-23" edge="1" parent="1" source="iBUfB8kXBhmkCbZ1e_Ak-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;labelBackgroundColor=none;fontColor=default;" target="iBUfB8kXBhmkCbZ1e_Ak-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iBUfB8kXBhmkCbZ1e_Ak-19" parent="1" style="whiteSpace=wrap;html=1;strokeWidth=2;rounded=1;arcSize=11;labelBackgroundColor=none;" value="&lt;div&gt;Game state is won!&lt;/div&gt;&lt;div&gt;Ask user to play again or quit&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="500" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="iBUfB8kXBhmkCbZ1e_Ak-21" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;labelBackgroundColor=none;" value="End" vertex="1">
+          <mxGeometry height="60" width="100" x="510" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="iBUfB8kXBhmkCbZ1e_Ak-22" edge="1" parent="1" source="iBUfB8kXBhmkCbZ1e_Ak-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;labelBackgroundColor=none;fontColor=default;" target="iBUfB8kXBhmkCbZ1e_Ak-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
