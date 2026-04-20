@@ -2,6 +2,7 @@
 #include "draw.h"
 #include "defs.h"
 #include "generate.h"
+#include "string.h"
 
 Display GameDisplay = {};
                         
@@ -48,9 +49,9 @@ int drawMainMenu()
             GameDisplay.buffer[i] = '*';
             column++;
         }
-        else//This part displays the menu text and options
+        else if(row == 3 && column == ((width - 9) / 2))//This part displays the menu text and options
         {
-
+            memcpy(GameDisplay.buffer + i, "Main Menu", 9);
         }
             
     }
