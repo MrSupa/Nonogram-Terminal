@@ -2,22 +2,21 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "C: clang build active file",
-            "type": "cppbuild",
-            "command": "D:\\msys64\\clang64\\bin\\clang.exe",
-            "args": [
-                "-fcolor-diagnostics",
-                "-fansi-escape-codes",
-                "-g",
-                "${file}",
-                "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
-            ],
+            "label": "Make Build",
+            "type": "shell",
+            "command": "mingw32-make",
+            "args": ["all"],
             "options": {
-                "cwd": "${fileDirname}"
+                "cwd": "${workspaceFolder}",
+                "env": {
+                    "PATH": "D:\\msys64\\clang64\\bin;C:\\msys64\\usr\\bin;${env:PATH}"
+                }
             },
-            "problemMatcher": ["$gcc"],
-            "group": "build"
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"]
         }
     ]
 }
