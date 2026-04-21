@@ -4,12 +4,16 @@
         {
             "label": "Make Build",
             "type": "shell",
-            "command": "mingw32-make",
-            "args": ["all"],
+            "command": "D:\\msys64\\usr\\bin\\bash.exe",
+            "args": [
+                "--login",
+                "-c",
+                "cd \"${workspaceFolder}\" && mingw32-make all"
+            ],
             "options": {
-                "cwd": "${workspaceFolder}",
                 "env": {
-                    "PATH": "D:\\msys64\\clang64\\bin;C:\\msys64\\usr\\bin;${env:PATH}"
+                    "MSYSTEM": "CLANG64",
+                    "PATH": "/clang64/bin:/usr/bin:${env:PATH}"
                 }
             },
             "group": {
