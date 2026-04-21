@@ -1,0 +1,5 @@
+{//Note, I have MSYS2 in my D: drive. Make sure to change the directory to C: if it is where your MSYS2 installation is at
+    "lldb.executable": "D:\\msys64\\clang64\\bin\\lldb.exe",
+    "C_Cpp.default.compilerPath": "D:\\msys64\\clang64\\bin\\clang.exe",
+    "C_Cpp.default.intelliSenseMode": "windows-clang-x64"
+}

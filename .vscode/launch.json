@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Clang Debug (CodeLLDB)",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}.exe",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "env": {},
+            "terminal": "integrated",
+            "preLaunchTask": "C/C++: clang++ build active file",
+            "stopOnEntry": false
+        }
+    ]
+}
