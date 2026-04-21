@@ -74,6 +74,6 @@ int main(int argc, char* argv[])
     //Check if the puzzle is solved
     //If not, go back to asking user for input
     //If so, game is completed. Ask user to restart or quit
-    while(GameMode != MD_QUIT) mainLoop();
+    /*while(GameMode != MD_QUIT)*/ mainLoop();
     return 0;
 }

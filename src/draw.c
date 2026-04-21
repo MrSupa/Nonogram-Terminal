@@ -22,6 +22,7 @@ int drawToScreen()
             drawMainMenu();
             break;
         case MD_PLAYING:
+            break;
     }
 
 }
@@ -56,6 +57,6 @@ int drawMainMenu()
             
     }
 
-    GameDisplay.buffer[width * height - 1] = '\0';
+    printf("%s", GameDisplay.buffer);
     return 0;
 }
