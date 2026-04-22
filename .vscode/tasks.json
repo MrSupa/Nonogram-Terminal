@@ -6,9 +6,9 @@
             "type": "shell",
             "command": "D:\\msys64\\usr\\bin\\bash.exe",
             "args": [
-                "--login",
                 "-c",
-                "cd \"${workspaceFolder}\" && mingw32-make all"
+                "pwd",//This just makes it work!
+                "cd \"${workspaceFolderForwardSlash}\" && mingw32-make all"
             ],
             "options": {
                 "env": {
