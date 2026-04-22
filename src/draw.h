@@ -4,8 +4,8 @@
 #include <stdio.h>
 #include "defs.h"
 
-#define WINDOW_WIDTH    120
-#define WINDOW_HEIGHT   40
+#define DEFAULT_WINDOW_WIDTH    40
+#define DEFAULT_WINDOW_HEIGHT   20
 
 typedef struct Display
 {

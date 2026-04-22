@@ -56,10 +56,10 @@ int main(int argc, char* argv[])
         {
             printf("Please make sure that you are using the correct syntax for window sizes,"
                   " using default window size\n");
-            initDisplay(WINDOW_WIDTH, WINDOW_HEIGHT);
+            initDisplay(DEFAULT_WINDOW_WIDTH, DEFAULT_WINDOW_HEIGHT);
         }
     }
-    else initDisplay(WINDOW_WIDTH, WINDOW_HEIGHT);
+    else initDisplay(DEFAULT_WINDOW_WIDTH, DEFAULT_WINDOW_HEIGHT);
 
     //Draw the main menu
     //Ask user for prompt (generate puzzle, open file, create puzzle, quit)
