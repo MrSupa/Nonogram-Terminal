@@ -51,7 +51,7 @@ int main(int argc, char* argv[])
     if ((argIndex = searchArgs("-w", NULL)) > -1)
     {
         if(checkArgType(argIndex + 1) == 'p' && checkArgType(argIndex + 2) == 'p')
-            initDisplay(argIndex + 1, argIndex + 2);
+            initDisplay(atoi(myArgs[argIndex + 1]),atoi(myArgs[argIndex + 2]));
         else
         {
             printf("Please make sure that you are using the correct syntax for window sizes,"

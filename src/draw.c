@@ -53,6 +53,12 @@ int drawMainMenu()
         else if(row == 3 && column == ((width - 9) / 2))//This part displays the menu text and options
         {
             memcpy(GameDisplay.buffer + i, "Main Menu", 9);
+            column += 9;
+        }
+        else
+        {
+            GameDisplay.buffer[i] = ' ';
+            column++;
         }
             
     }
