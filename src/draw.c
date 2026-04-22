@@ -47,12 +47,14 @@ int drawMainMenu()
         }
         else if(row == 0 || row == (height - 1) || column == 0 || column == (width - 2))//Fill border with '*'
         {
-            GameDisplay.buffer[i] = (column % 10) + '0';//This is to show the number of the row 0-9
+            //GameDisplay.buffer[i] = (column % 10) + '0';//This is to show the number of the row 0-9
+            GameDisplay.buffer[i] = '*';
             column++;
         }
         else if(row == 3 && column == ((width - 9) / 2))//This part displays the menu text and options
         {
             memcpy(GameDisplay.buffer + i, "Main Menu", 9);
+            i+=8;
             column += 9;
         }
         else
