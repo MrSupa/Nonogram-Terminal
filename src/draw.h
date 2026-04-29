@@ -24,7 +24,7 @@ void initDisplay(int w, int h);
 
 /// @brief Draws to the screen 
 /// @return 0 if there are no problems, 1 if cannot draw properly
-int drawToScreen();
+void drawToScreen();
 
 int drawMainMenu();
 

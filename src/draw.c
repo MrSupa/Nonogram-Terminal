@@ -14,7 +14,7 @@ void initDisplay(int w, int h)
     GameDisplay.buffer = malloc(sizeof(char*) * (w * h + 1));//The last char* is for null character
 }
 
-int drawToScreen()
+void drawToScreen()
 {
     switch (GameMode)
     {
@@ -28,6 +28,7 @@ int drawToScreen()
             exit(EXIT_FAILURE);
     }
 
+    return;
 }
 
 int drawMainMenu()
