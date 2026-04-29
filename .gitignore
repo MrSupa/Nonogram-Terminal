@@ -2,6 +2,9 @@
 bin/
 obj/
 
+# clangd cache
+.cache/
+
 # Common C extras
 *.o
 *.exe
