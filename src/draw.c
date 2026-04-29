@@ -23,6 +23,9 @@ int drawToScreen()
             break;
         case MD_PLAYING:
             break;
+        default:
+	    fprintf(stderr, "Error: Gamemode is not initialized, exiting program\n");
+            exit(EXIT_FAILURE);
     }
 
 }
@@ -36,6 +39,8 @@ int drawMainMenu()
     const int width   = GameDisplay.window_w;
     const int height  = GameDisplay.window_h;
 
+    //TODO: This main menu display code is UGLY, but it works for now...
+    //TODO: Make sure there is a set minimum size for window initialization or else if it is too small it will break the display
     for(int i = 0; i < (width * height - 1); i++)
     {
         
@@ -57,6 +62,30 @@ int drawMainMenu()
             i+=8;
             column += 9;
         }
+        else if (row == 5 && column == ((width - 25) / 2)) // This is for the generate random game option
+        {
+          memcpy(GameDisplay.buffer + i, "1: Generate Random Puzzle", 25);
+          i += 24;
+	  column += 25;
+	} 
+        else if (row == 7 && column == ((width - 12) / 2)) // This is for the generate random game option
+        {
+          memcpy(GameDisplay.buffer + i, "2: Open File", 12);
+          i += 11;
+	  column += 12;
+	} 
+        else if (row == 9 && column == ((width - 16) / 2)) // This is for the generate random game option
+        {
+          memcpy(GameDisplay.buffer + i, "3: Create Puzzle", 16);
+          i += 15;
+	  column += 16;
+	} 
+        else if (row == 11 && column == ((width - 7) / 2)) // This is for the generate random game option
+        {
+          memcpy(GameDisplay.buffer + i, "Q: Quit", 7);
+          i += 6;
+	  column += 7;
+	} 
         else
         {
             GameDisplay.buffer[i] = ' ';
