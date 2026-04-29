@@ -6,6 +6,12 @@ obj/
 .cache/
 *.idx
 
+# emacs/vim backup and swap files
+*~
+.#*
+\#*#
+
+
 # Common C extras
 *.o
 *.exe
