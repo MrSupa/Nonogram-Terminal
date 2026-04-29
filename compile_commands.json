@@ -1,0 +1,82 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/clang",
+      "-Wall",
+      "-Wextra",
+      "-g",
+      "-Isrc",
+      "-c",
+      "-o",
+      "obj/arg.o",
+      "src/arg.c"
+    ],
+    "directory": "/home/matthew/Documents/Programming/Nonogram-Terminal",
+    "file": "/home/matthew/Documents/Programming/Nonogram-Terminal/src/arg.c",
+    "output": "/home/matthew/Documents/Programming/Nonogram-Terminal/obj/arg.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/clang",
+      "-Wall",
+      "-Wextra",
+      "-g",
+      "-Isrc",
+      "-c",
+      "-o",
+      "obj/draw.o",
+      "src/draw.c"
+    ],
+    "directory": "/home/matthew/Documents/Programming/Nonogram-Terminal",
+    "file": "/home/matthew/Documents/Programming/Nonogram-Terminal/src/draw.c",
+    "output": "/home/matthew/Documents/Programming/Nonogram-Terminal/obj/draw.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/clang",
+      "-Wall",
+      "-Wextra",
+      "-g",
+      "-Isrc",
+      "-c",
+      "-o",
+      "obj/generate.o",
+      "src/generate.c"
+    ],
+    "directory": "/home/matthew/Documents/Programming/Nonogram-Terminal",
+    "file": "/home/matthew/Documents/Programming/Nonogram-Terminal/src/generate.c",
+    "output": "/home/matthew/Documents/Programming/Nonogram-Terminal/obj/generate.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/clang",
+      "-Wall",
+      "-Wextra",
+      "-g",
+      "-Isrc",
+      "-c",
+      "-o",
+      "obj/main.o",
+      "src/main.c"
+    ],
+    "directory": "/home/matthew/Documents/Programming/Nonogram-Terminal",
+    "file": "/home/matthew/Documents/Programming/Nonogram-Terminal/src/main.c",
+    "output": "/home/matthew/Documents/Programming/Nonogram-Terminal/obj/main.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/clang",
+      "-Wall",
+      "-Wextra",
+      "-g",
+      "-Isrc",
+      "-c",
+      "-o",
+      "obj/memory.o",
+      "src/memory.c"
+    ],
+    "directory": "/home/matthew/Documents/Programming/Nonogram-Terminal",
+    "file": "/home/matthew/Documents/Programming/Nonogram-Terminal/src/memory.c",
+    "output": "/home/matthew/Documents/Programming/Nonogram-Terminal/obj/memory.o"
+  }
+]
