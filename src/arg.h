@@ -31,15 +31,13 @@ int searchArgs(char* value, ...);
  * @param index 
  * @return  '\0' if the argument does not go to the index,
  * 
- *          'p' if the argument is a positive integer
+ *          'p' if the argument is a positive integer or 0
  * 
  *          'n' if the argument is a negative integer
  * 
  *          'f' if the argument is a positive float
  *
  *          'b' if the argument is a negative float (b for backwards)
- * 
- *          'z' if the argument is 0
  * 
  *          'c' if the argument is a single character
  * 

@@ -68,11 +68,15 @@ int searchArgs(char *value, ...)
 
 char checkArgType(int index)
 {
-    if(!isArgIndexValid(index)) return '\0';
+    if(!isArgIndexValid(index)) return '\0';//There is no argument here
 
     char type = 'x';
     char* arg = strdup(myArgs[index]);
 
+    if(isdigit(*arg))
+    {
+        //TODO: This
+    }
 
 
     free(arg);
