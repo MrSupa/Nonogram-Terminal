@@ -4,6 +4,7 @@ obj/
 
 # clangd cache
 .cache/
+*.idx
 
 # Common C extras
 *.o
