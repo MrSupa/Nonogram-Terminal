@@ -33,7 +33,7 @@ void drawToScreen()
 
 int drawMainMenu()
 {
-    int index   = 0;
+    //int index   = 0;
     int row     = 0;
     int column  = 0;
 
@@ -96,5 +96,55 @@ int drawMainMenu()
     }
 
     printf("%s", GameDisplay.buffer);
+    return 0;
+}
+
+int drawPuzzle()
+{
+    const int frame_width   = (GamePuzzle.width * 2) + 2;
+    const int frame_height  = (GamePuzzle.height * 2) + 8;
+    const int frame_w_start = ((GameDisplay.window_w - frame_width) / 2);
+    const int frame_h_start = ((GameDisplay.window_h - frame_height) / 2);
+    const int frame_w_end   = (frame_width + frame_w_start);
+    const int frame_h_end   = (frame_height + frame_w_start);
+
+    
+    int window_w            = 0;
+    int window_h            = 0;
+    int puzzle_row          = 0;
+    int puzzle_column       = 0;
+
+    for(int i = 0; i < GameDisplay.window_w * GameDisplay.window_h; i++)
+    {
+        if(window_w < frame_w_start)//empty space to the left of the frame
+        {
+            GameDisplay.buffer[i] = ' ';
+            window_w++;
+        }
+        else if(window_w > frame_w_end || window_h < frame_h_start || window_h > frame_h_end)//empty space to the right of the frame, above the frame, or below the frame
+        {
+            if(window_w > GameDisplay.window_w)//right end of window
+            {
+                if(window_w >= GameDisplay.window_w && window_h >= GameDisplay.window_h)//Bottom right, finished displaying puzzle window
+                {
+                    GameDisplay.buffer[i] = '\0';
+                    break;
+                }
+                else
+                {
+                    GameDisplay.buffer[i] = '\n';
+                    window_w = 0;
+                    window_h++;
+                }
+                
+            }
+            else
+            {
+                GameDisplay.buffer[i] = ' ';
+                window_w++;
+            }
+        }
+    }
+
     return 0;
 }

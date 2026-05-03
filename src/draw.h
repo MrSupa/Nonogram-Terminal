@@ -1,7 +1,6 @@
 #ifndef DRAW_H
 #define DRAW_H
 
-#include <stdio.h>
 #include "defs.h"
 
 #define DEFAULT_WINDOW_WIDTH    40
@@ -27,5 +26,7 @@ void initDisplay(int w, int h);
 void drawToScreen();
 
 int drawMainMenu();
+
+int drawPuzzle();
 
 #endif //DRAW_H
