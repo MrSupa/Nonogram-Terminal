@@ -34,7 +34,7 @@ int generatePuzzle()
     
 }
 
-int writeFileToBuffer(char *File)
+int writeFileToBuffer(char *Filename)
 {
     return 0;
 }

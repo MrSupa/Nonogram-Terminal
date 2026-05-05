@@ -1,4 +1,6 @@
 #include <stdlib.h>
+#include <wchar.h>
+#include <stdbool.h>
 #include "draw.h"
 #include "defs.h"
 #include "generate.h"
@@ -11,7 +13,7 @@ void initDisplay(int w, int h)
 {
     GameDisplay.window_w = w;
     GameDisplay.window_h = h;
-    GameDisplay.buffer = malloc(sizeof(char*) * (w * h + 1));//The last char* is for null character
+    GameDisplay.buffer = malloc(sizeof(wchar_t*) * (w * h + 1));//The last char* is for null character
 }
 
 void drawToScreen()
@@ -113,6 +115,8 @@ int drawPuzzle()
     int window_h            = 0;
     int puzzle_row          = 0;
     int puzzle_column       = 0;
+    const int block_size    = 2;//This can become variable in the future
+    int block_index         = 0;
 
     for(int i = 0; i < GameDisplay.window_w * GameDisplay.window_h; i++)
     {
@@ -141,6 +145,44 @@ int drawPuzzle()
             else
             {
                 GameDisplay.buffer[i] = ' ';
+                window_w++;
+            }
+        }
+        else//inside the puzzle frame
+        {
+            wchar_t corner_l;
+            wchar_t corner_r;
+            bool    iscorner = false;
+            if      (window_h == frame_h_start)
+            {
+                corner_l = L'┌';
+                corner_r = L'┐';
+                iscorner = true;
+            }
+            else if (window_h == frame_h_end)
+            {
+                corner_l = L'└';
+                corner_r = L'┘';
+                iscorner = true;
+            }
+            if(iscorner)//top left corner
+            {
+                GameDisplay.buffer[i] = corner_l;
+                window_w++;
+                i++;
+
+                while(window_w < frame_w_end)
+                {
+                    GameDisplay.buffer[i] = L'─';
+                    window_w++;
+                    i++;
+                }
+                GameDisplay.buffer[i] = corner_r;
+                window_w++;
+            }
+            else
+            {
+                GameDisplay.buffer[i] = L'│';
                 window_w++;
             }
         }

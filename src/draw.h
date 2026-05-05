@@ -1,6 +1,8 @@
 #ifndef DRAW_H
 #define DRAW_H
 
+#include <wchar.h>
+
 #include "defs.h"
 
 #define DEFAULT_WINDOW_WIDTH    40
@@ -12,9 +14,9 @@
 
 typedef struct Display
 {
-    int     window_w;
-    int     window_h;
-    char*   buffer;
+    int         window_w;
+    int         window_h;
+    wchar_t*    buffer;
 } Display;
 
 extern Display GameDisplay;

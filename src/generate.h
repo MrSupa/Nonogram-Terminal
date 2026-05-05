@@ -18,6 +18,6 @@ void initPuzzle(int w, int h);
 
 int generatePuzzle();
 
-int writeFileToBuffer(char* File);
+int writeFileToBuffer(char* Filename);
 
 #endif //GENERATE_H
